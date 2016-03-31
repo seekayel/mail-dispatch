@@ -8,7 +8,7 @@ class EmailProcessor
     # processing reports, etc
 
     # here's an example of model creation
-    msg = EmailMessage.new(@email)
+    msg = EmailMessage.new(to:@email.to, from:@email.from, subject:@email.subject, cc:@email.cc)
     msg.save
   end
 end
