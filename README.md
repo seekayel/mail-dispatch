@@ -1,11 +1,24 @@
 ## README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+mail-dispatch tries to make group email lists easier to handle. Anyone on the list can send to the list and allow the reply-all nonsense to begin.
 
-Things you may want to cover:
+### Application Design
+
+- EmailAdress: email
+- EmailMessage: everything received on inbound
+
+Uses SendGrid parse API to receive inbound email. Uses Thoughbot's griddler and griddler-sendgrid gems to parse the inbound POSTs.
+
+
+### Possible TODOs
+
+- Add guard to test
+- Add heroku staging
+- Add CI/code intro-spection tool
 
 * Ruby version
+ 
+ 2.3.0
 
 * System dependencies
 
